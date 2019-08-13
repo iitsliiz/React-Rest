@@ -1,16 +1,17 @@
 import React from "react";
-import dishList from '../AllItems/AllDishes';
+import '../NavBar/NavBar.css';
 
 class NavBar extends React.Component{
  
     
     render(){
         return(
-            <div>
+            <div id="navbar">
                 <ul>
-                    <button href="#Main Dishes">Main Dishes</button>
+                    <a href='#Main Dishes'>Main Dishes</a>
                     <a href="#Sweets">Sweets</a>
                     <a href="#Sides">Sides</a>
+                    <a href="#Drinks">Drinks</a>
                 </ul>
                 
             
