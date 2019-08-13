@@ -1,7 +1,9 @@
 import React from 'react';
-import Dishes from '../Dishes/Dishes';
-
 import NavBar from '../NavBar/NavBar';
+import Header from '../Header/Header'
+import Dishes from '../Dishes/Dishes';
+import Contact from '../Contact/Contact';
+
 
 
 
@@ -14,8 +16,10 @@ class App extends React.Component{
     render() {
         return(
             <div>
-                <NavBar/>,
+                <NavBar/>
+                <Header/>
                 <Dishes />
+                <Contact />
                     
                
                

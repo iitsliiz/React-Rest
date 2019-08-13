@@ -6,16 +6,18 @@ class NavBar extends React.Component{
     
     render(){
         return(
-            <div id="navbar">
-                <ul>
-                    <a href='#Main Dishes'>Main Dishes</a>
-                    <a href="#Sweets">Sweets</a>
-                    <a href="#Sides">Sides</a>
-                    <a href="#Drinks">Drinks</a>
-                </ul>
-                
             
-            </div>
+                <div id="div">
+                    
+                    <a className='group' href='#Main Dishes'>Main Dishes</a>
+                    <a className='group' href="#Sides">Sides & Sauces</a>
+                    <a className='group' href="#Sweets">Sweets</a>                    
+                    <a className='group' href="#Drinks">Drinks</a>
+                    <a className='group' href="#Contact">Contact</a>
+                
+                </div>
+            
+            
         )
     }
 }
