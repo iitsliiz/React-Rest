@@ -7,9 +7,10 @@ class NavBar extends React.Component{
     render(){
         return(
             
-                <div id="div">
+                <div id="navbar">
                     
-                    <a className='group' href='#Main Dishes'>Main Dishes</a>
+                    
+                    <a className='group' href='#Main Dish'>Main Dishes</a>
                     <a className='group' href="#Sides">Sides & Sauces</a>
                     <a className='group' href="#Sweets">Sweets</a>                    
                     <a className='group' href="#Drinks">Drinks</a>

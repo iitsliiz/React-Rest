@@ -26,9 +26,9 @@ class Dishes extends React.Component{
    const dish = result.map(dish => {   
     // console.log(dish.price)     
          return(              
-            <div className="holds">
+            <div className="box" dish={dish}>
                 <div className="Dish">
-                    <img id="Img" alt={dish.title} src={dish.imgFile}/> 
+                    <img id="ImgFood" alt={dish.title} src={dish.imgFile}/> 
                 <div className="Dish-information">
                     <h3>{dish.title}</h3>
                     <p>{dish.price}</p>                           
@@ -48,9 +48,9 @@ class Dishes extends React.Component{
         const result = dishes.filter(dish => dish.type === "Sides & Sauces");
         const dish = result.map(dish => {   
             return(              
-                <div className="holds">
+                <div className="box" dish={dish}>
                     <div className="Dish">
-                        <img id="Img" alt={dish.title} src={dish.imgFile}/> 
+                        <img id="ImgFood" alt={dish.title} src={dish.imgFile}/> 
                     <div className="Dish-information">
                         <h3>{dish.title}</h3>
                         <p>{dish.price}</p>                           
@@ -68,9 +68,9 @@ class Dishes extends React.Component{
         const result = dishes.filter(dish => dish.type === "Sweets");
         const dish = result.map(dish => {   
         return(              
-            <div id="holds">
+            <div className="box" dish={dish}>
                 <div className="Dish">
-                    <img id="Img" alt={dish.title} src={dish.imgFile}/> 
+                    <img id="ImgFood" alt={dish.title} src={dish.imgFile}/> 
                 <div className="Dish-information">
                     <h3>{dish.title}</h3>
                     <p>{dish.price}</p>                           
@@ -88,9 +88,9 @@ class Dishes extends React.Component{
         const result = dishes.filter(dish => dish.type === "Drinks");
         const dish = result.map(dish => {   
         return(              
-            <div dish={dish} className="holds">
+            <div className="box" dish={dish} >
                 <div key={dish.id} className="Dish">
-                    <img id="Img" alt={dish.title} src={dish.imgFile}/> 
+                    <img id="ImgFood" alt={dish.title} src={dish.imgFile}/> 
                 <div className="Dish-information">
                     <h3>{dish.title}</h3>
                     <p>{dish.price}</p>                           
@@ -105,24 +105,35 @@ class Dishes extends React.Component{
         
  render(){
   return( 
-        <div>
+        <div id="body">
+            
             <div id='Main Dish'className="title">
                 <h1>Main Dishes</h1>
-           </div>
-            {this.getMainDish()}
+                </div>
+            <div className="holds">    
+                {this.getMainDish()}
+            </div>
+            
             <div id='Sides' className="title">
-        <h1>Sides & Sauces</h1>
+                <h1>Sides & Sauces</h1>
+            </div >
+            <div className="holds">    
+                {this.getSideDish()}
             </div>
-            {this.getSideDish()}
-            <div id='Sweets' className="title">
-        <h1 >Sweets</h1>
+            
+                <div id='Sweets' className="title">
+                    <h1 >Sweets</h1>
+                </div>
+            <div className="holds">    
+                {this.getSweets()}
             </div>
-            {this.getSweets()}
-            <div className="title">
-        <h1 id='Drinks' className="title">Drinks</h1>
+            
+            <div id='Drinks' className="title">
+                <h1 >Drinks</h1>
             </div>
-            {this.getDrinks()}
-         
+            <div className="holds">
+                {this.getDrinks()}
+            </div>
      </div>
 
         
