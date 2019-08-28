@@ -6,16 +6,12 @@ import Contact from '../Contact/Contact';
 
 
 
-
-
-
-
 class App extends React.Component{
 
 
     render() {
         return(
-            <div className="div">
+            <div className="app">
                 <NavBar/>
                 <Header/>
                 <Dishes />

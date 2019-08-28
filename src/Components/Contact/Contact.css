@@ -1,0 +1,54 @@
+
+#Contact{
+    font-family: 'Amatic SC', cursive;
+    text-align: left;
+    font-size: 25px;
+   
+}
+
+#lady{
+    display: flex;
+    float: left;
+   
+}
+
+.bkgrd{
+    background-image: url('https://i.ibb.co/PTG0KGt/maracas-bay-the-beach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height:350px;
+   
+    
+}
+
+
+@media only screen and (max-width: 800px) {
+   
+
+    #Contact{
+        font-family: 'Amatic SC', cursive;
+        text-align: right;
+        font-size: 12px;
+       
+    }
+    
+    #lady{
+        display: flex;
+        float: right;
+       
+    }
+    
+    .bkgrd{
+        display: hidden;
+        background-image: url('https://i.ibb.co/PTG0KGt/maracas-bay-the-beach.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height:350px;
+        width: 600px;
+        float: right;
+        
+    }
+  
+}

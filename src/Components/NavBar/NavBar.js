@@ -9,8 +9,8 @@ class NavBar extends React.Component{
             
                 <div id="navbar">
                     
-                    
-                    <a className='group' href='#Main Dish'>Main Dishes</a>
+                    <img  id="imglogo"alt="" src="https://i.ibb.co/h2Jx872/logo-Edited.png"/>
+                    <a className='group' href='#MainDish'>Main Dishes</a>
                     <a className='group' href="#Sides">Sides & Sauces</a>
                     <a className='group' href="#Sweets">Sweets</a>                    
                     <a className='group' href="#Drinks">Drinks</a>

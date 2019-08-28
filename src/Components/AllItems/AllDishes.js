@@ -4,7 +4,7 @@ const dishList = [
     {
         id: 1,
         title: "Jerk Chicken Plate",
-        imgFile: "https://i.ibb.co/QvnRXwP/jerkBox.jpg",
+        imgFile: "https://i.ibb.co/0YxWfqG/grill-chicken.jpg",
         price: "$9.50",
         type: "Main Dish"    
     },
@@ -25,7 +25,7 @@ const dishList = [
     {
         id: 4,
         title: "Jerk Ribs Plate",
-        imgFile: '',
+        imgFile: 'https://i.ibb.co/QvnRXwP/jerkBox.jpg',
         price: "$10.00",
         type: "Main Dish"
     },
@@ -86,54 +86,62 @@ const dishList = [
         price: "$3.00",
         type: "Sides & Sauces"
     },
-    {    
-        id: 13,
-        title: "Cabbage",
-        imgFile: 'https://i.ibb.co/bJ4CnVT/cabbage.jpg',
-        price: "$3.00",
-        type: "Sides & Sauces"
-    },
     {   
-        id: 14,
+        id: 13,
         title: "Curry Mango",
         imgFile: 'https://i.ibb.co/THY5873/curry-Mango.jpg',
         price: "(8oz.) $5.00 (16oz.)$10.00",
         type: "Sides & Sauces"
     },
     {
-        id: 15,
+        id: 14,
         title: "Currants Roll",
         imgFile: 'https://i.ibb.co/JBkpqkX/currants-Rolls.jpg',
         price: "$3.00",
         type: "Sweets"
     },
     {
-        id: 16,
+        id: 15,
         title: "Sweet Bread",
         imgFile: 'https://i.ibb.co/gm1fNM5/sweetbread.jpg',
         price: "$2.00 Slice $12.00 Loaf",
         type: "Sweets"
     },
+    
     {
-        id: 17,
-        title: "Cassava Pone",
-        imgFile: "https://i.ibb.co/ncGNFQR/pone.jpg",
-        price: "$6.00",
+        id: 16,
+        title: "Kurma",
+        imgFile: 'https://i.ibb.co/vVDnMYB/trinidad-kurma-15.jpg',
+        price: "",
         type: "Sweets"
     },
     {
-        id: 18,
+        id: 17,
         title: "Sorrel",
         imgFile: 'https://i.ibb.co/zXcwdfm/sorrel.jpg',
         price: "",
         type: "Drinks"
     },
     {
-        id: 19,
-        title: "",
-        imgFile: '',
+        id: 18,
+        title: "Passion Fruit",
+        imgFile: 'https://i.ibb.co/sKRX9Kj/passion-Fruit.jpg',
         price: "",
-        type: ""
+        type: "Drinks"
+    },
+    {
+        id: 19,
+        title: "SourSop",
+        imgFile: 'https://i.ibb.co/1XFZ0TF/soursop.jpg',
+        price: "",
+        type: "Drinks"
+    },
+    {
+        id: 20,
+        title: "Peanut Punch",
+        imgFile: 'https://i.ibb.co/4m6zK3m/peanut-Punch.jpg',
+        price: "",
+        type: "Drinks"
     }
 ];
 

@@ -1,22 +1,4 @@
-/* latin */
-@font-face {
-    font-family: 'Kalam';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v10/YA9dr0Wd4kDdMthROCc.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
 
-/* latin */
-@font-face {
-    font-family: 'Kalam';
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v10/YA9Qr0Wd4kDdMtDqHTLMkiQ.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
 
 
 
@@ -59,40 +41,41 @@ a{
 }
 
 @media only screen and (max-width: 800px) {
-  #div{ 
-    display: flex;
-    flex-direction: column;
-    position: fixed; 
-    
-    background-color:  white;
-    white-space: nowrap;
-    z-index: 1;
-    align-self: auto;
-    width: auto;
-    
-    justify-content: space-between; 
-    list-style: none;  
-    white-space: nowrap;
-    height:60px;
-    text-align: left; 
-    
-  }
-
-
-  .group{
-    
-    
-    background-image: none;
-    
-    width: 310px;
-  }
   
-  a{ 
-      flex-basis: auto;        
-      font-family: 'Kalam', cursive ;
-      font-size: 25px;
-      color: red;    
-  }
+#navbar{ 
+  display: flex;
+  flex-direction: column;
+  position: fixed; 
+  z-index: 1;
+  width: 200px;
+  
+  justify-content: space-evenly; 
+  height: 480px;
+  text-align: left;
+}
+
+#imglogo{
+  display:none;
+}
+
+.group{
+  display: hidden;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px;
+  width: 265px;
+}
+
+a{ 
+    flex-basis: auto;
+    
+    font-family: 'Kalam', cursive ;
+    font-size: 30px;
+    color: red;
+    
+  
+}
 
 
   }

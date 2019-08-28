@@ -41,9 +41,7 @@ class Dishes extends React.Component{
              
             }
         
-            
-       
-    getSideDish(){
+   getSideDish(){
         let dishes= this.state.dishes;
         const result = dishes.filter(dish => dish.type === "Sides & Sauces");
         const dish = result.map(dish => {   
@@ -61,7 +59,7 @@ class Dishes extends React.Component{
                       })
                  return dish;
                       
-                     }
+             }
                  
     getSweets(){
         let dishes= this.state.dishes;
@@ -102,13 +100,18 @@ class Dishes extends React.Component{
         return dish;
              
             }
+
+    
         
  render(){
   return( 
         <div id="body">
             
-            <div id='Main Dish'className="title">
+            <div id='MainDish'className="title">
                 <h1>Main Dishes</h1>
+                <p>(taxes are charged seperately)</p>
+                <h3>Rice plates are served with rice and beans, cabbage and sweet fried plantains.
+Roti plates are served with curried potatoes.</h3>
                 </div>
             <div className="holds">    
                 {this.getMainDish()}
