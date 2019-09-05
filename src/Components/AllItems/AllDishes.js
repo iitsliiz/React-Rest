@@ -64,7 +64,6 @@ const dishList = [
         price: "$3.00",
         type: "Main Dish"
     }, 
-
     {
         id: 10,
         title: "Macaroni Pie",
