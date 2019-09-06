@@ -10,6 +10,9 @@ class Dishes extends React.Component{
         super(props);
         
         this.getMain = this.getMain.bind(this);
+        this.getSaS = this.getSaS.bind(this);
+        this.getSweets = this.getSweets.bind(this);
+        this.getDrinks = this.getDrinks.bind(this);
     }
 
 
@@ -68,16 +71,40 @@ class Dishes extends React.Component{
 
 
 }
+
+
+getDrinks(){
+    const dishes = this.props.dishes;
+    const filterMain = dishes.filter( dish => dish.type === 'Drinks').map(dish => {
+        return (
+                < Dish key={dish.id}
+                            dish={dish}
+                            title={dish.title}
+                            imgFile={dish.imgFile}
+                            price={dish.price}
+                            type={dish.type}               
+                />
+                 )})
+
+return filterMain;
+
+
+}
            
  render(){
   return( 
        <div>
-           <h3>Main Dish</h3>
+           <h3 className="title">Main Dish</h3>
+           <h4 className="minHead">(taxes are charged seperately)</h4>
+           <h4 className="minHead">Rice plates are served with rice and beans, cabbage and sweet fried plantains.</h4>
+           <h4 className="minHead">Roti plates are served with curried potatoes.</h4>
            {this.getMain()}
-           <h3>Sides & Sauces</h3>
+           <h3 className="title">Sides & Sauces</h3>
            {this.getSaS()}
-           <h3>Sweets</h3>
+           <h3 className="title">Sweets</h3>
            {this.getSweets()}
+           <h3 className="title">Drinks</h3>
+           {this.getDrinks()}
        </div>        
      );
  }
